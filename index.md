@@ -21,6 +21,15 @@ println(sum(ai * bi for (ai, bi) ∈ zip(a, b)))
 
 \output{./ex1}
 
+```julia:./ex2
+using RDatasets
+
+df = dataset("datasets", "mtcars")
+println(df)
+```
+
+\output{./ex2}
+
 (yet another example that floating point arithmetics can be complicated).
 
 $$ \forall x \in \R:\quad \scal{x, x} \ge 0 $$
